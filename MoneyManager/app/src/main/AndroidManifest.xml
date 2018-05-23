@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moneymanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.moneymanager.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.moneymanager.ListGiaoDichMainActivity"
+            android:label="Lịch sử"
+            android:parentActivityName="com.example.moneymanager.MainActivity" />
+        <activity
+            android:name="com.example.moneymanager.ThemgiaodichActivity"
+            android:label="Thêm giao dịch"
+            android:parentActivityName="com.example.moneymanager.MainActivity" />
+        <activity android:name="com.example.moneymanager.ThuChiMainActivity" />
+        <activity android:name="com.example.moneymanager.MainActivity" />
+        <activity android:name="com.example.moneymanager.LoginActivity" />
+        <activity android:name="com.example.moneymanager.ThongKe.StatsActivity" />
+        <activity android:name="com.example.moneymanager.ThongKe.StatsHomNay" />
+        <activity android:name="com.example.moneymanager.ThongKe.StatsThangNay" />
+        <activity android:name="com.example.moneymanager.ThongKe.StatsNamNay" />
+        <activity android:name="com.example.moneymanager.CaiDatActivity" />
+    </application>
+
+</manifest>
